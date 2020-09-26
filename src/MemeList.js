@@ -4,9 +4,7 @@ import Meme from "./Meme";
 
 const MemeList = () => {
 	const memes = useSelector((st) => st.memes);
-	if (!memes) {
-		return null;
-	}
+
 	return (
 		<div>
 			{memes.map((m) => (
